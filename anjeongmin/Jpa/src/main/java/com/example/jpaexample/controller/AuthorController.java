@@ -30,6 +30,6 @@ public class AuthorController {
 
     @GetMapping
     public ResponseEntity<List<AuthorInfoResponseDto>> getAllAuthorAndBooks() {
-        return ResponseEntity.status(HttpStatus.OK).body(authorService.getAllAuthor());
+        return ResponseEntity.status(HttpStatus.OK).body(authorService.getAllAuthorAndBooks());
     }
 }

@@ -34,7 +34,7 @@ public class AuthorService {
     }
 
     @Transactional(readOnly = true)
-    public List<AuthorInfoResponseDto> getAllAuthor() {
+    public List<AuthorInfoResponseDto> getAllAuthorAndBooks() {
         return authorRepository.findAll()
                 .stream()
                 .map(AuthorInfoResponseDto::from)
